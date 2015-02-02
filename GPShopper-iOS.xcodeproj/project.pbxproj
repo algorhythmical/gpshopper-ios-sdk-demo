@@ -67,7 +67,6 @@
 		1A9D6293191EB61A0069D303 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6284191EB61A0069D303 /* OpenSans-Regular.ttf */; };
 		1A9D6294191EB61A0069D303 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6285191EB61A0069D303 /* OpenSans-Semibold.ttf */; };
 		1A9D6295191EB61A0069D303 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D6286191EB61A0069D303 /* OpenSans-SemiboldItalic.ttf */; };
-		1AAD945C1A323E06003C5156 /* GPShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAD945B1A323E06003C5156 /* GPShopper.framework */; };
 		1AAD94601A324949003C5156 /* GPDShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD945E1A324949003C5156 /* GPDShoppingListViewController.m */; };
 		1AAD94611A324949003C5156 /* GPDShoppingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAD945F1A324949003C5156 /* GPDShoppingListViewController.xib */; };
 		1AD79DBC19EC893000E485AB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD79DBA19EC893000E485AB /* EventKit.framework */; };
@@ -181,7 +180,6 @@
 		1A9D6285191EB61A0069D303 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		1A9D6286191EB61A0069D303 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		1A9D62B5191EB68B0069D303 /* GPSDemo Framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GPSDemo Framework-Info.plist"; sourceTree = "<group>"; };
-		1AAD945B1A323E06003C5156 /* GPShopper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPShopper.framework; sourceTree = "<group>"; };
 		1AAD945D1A324949003C5156 /* GPDShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDShoppingListViewController.h; sourceTree = "<group>"; };
 		1AAD945E1A324949003C5156 /* GPDShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDShoppingListViewController.m; sourceTree = "<group>"; };
 		1AAD945F1A324949003C5156 /* GPDShoppingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDShoppingListViewController.xib; sourceTree = "<group>"; };
@@ -209,12 +207,17 @@
 		1AFFEEDA1924186600340EE5 /* GPDPDPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDPDPViewController.h; sourceTree = "<group>"; };
 		1AFFEEDB1924186600340EE5 /* GPDPDPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDPDPViewController.m; sourceTree = "<group>"; };
 		1AFFEEDC1924186600340EE5 /* GPDPDPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDPDPViewController.xib; sourceTree = "<group>"; };
+		2E01FBB1879011A220233F4A /* Pods-GPShopper-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPShopper-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPShopper-iOS/Pods-GPShopper-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2E867D461A7FEC0900FE1F2B /* libPods-GPShopper-iOS-GPShopperSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-GPShopper-iOS-GPShopperSDK.a"; path = "Pods/build/Debug-iphoneos/libPods-GPShopper-iOS-GPShopperSDK.a"; sourceTree = "<group>"; };
+		2E867D481A7FEC0D00FE1F2B /* libPods-GPShopperSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-GPShopperSDK.a"; path = "Pods/build/Debug-iphoneos/libPods-GPShopperSDK.a"; sourceTree = "<group>"; };
 		2EC464C01A7948DE00B7A823 /* GPDRequestAssociateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDRequestAssociateViewController.h; sourceTree = "<group>"; };
 		2EC464C11A7948DE00B7A823 /* GPDRequestAssociateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDRequestAssociateViewController.m; sourceTree = "<group>"; };
 		2EC464C21A7948DE00B7A823 /* GPDRequestAssociateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDRequestAssociateViewController.xib; sourceTree = "<group>"; };
 		2EC464C51A794A5200B7A823 /* GPDInStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDInStoreViewController.h; sourceTree = "<group>"; };
 		2EC464C61A794A5200B7A823 /* GPDInStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDInStoreViewController.m; sourceTree = "<group>"; };
 		2EC464C71A794A5200B7A823 /* GPDInStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDInStoreViewController.xib; sourceTree = "<group>"; };
+		3C319C4AF7948D75DDADA4DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EE838E865263D9E34E16A2 /* libPods-GPShopper-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPShopper-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C032A2B41A002C7600088FFF /* GPDProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDProfileViewController.h; sourceTree = "<group>"; };
 		C032A2B51A002C7600088FFF /* GPDProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDProfileViewController.m; sourceTree = "<group>"; };
 		C032A2B61A002C7600088FFF /* GPDProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDProfileViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		C032A2BE1A0041A200088FFF /* GPDRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDRegistrationViewController.h; sourceTree = "<group>"; };
 		C032A2BF1A0041A200088FFF /* GPDRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDRegistrationViewController.m; sourceTree = "<group>"; };
 		C032A2C01A0041A200088FFF /* GPDRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDRegistrationViewController.xib; sourceTree = "<group>"; };
+		ECF378B3728B4E274F1F63E3 /* Pods-GPShopper-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPShopper-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPShopper-iOS/Pods-GPShopper-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +242,6 @@
 				1AF412F5191EBA350044CAA8 /* libc++.dylib in Frameworks */,
 				1AF412F3191EBA2C0044CAA8 /* libz.dylib in Frameworks */,
 				1A080AC21914277500858C66 /* CoreGraphics.framework in Frameworks */,
-				1AAD945C1A323E06003C5156 /* GPShopper.framework in Frameworks */,
 				1A74D363191F11C300CBD8D7 /* MapKit.framework in Frameworks */,
 				1A080AC41914277500858C66 /* UIKit.framework in Frameworks */,
 				1A080AC01914277500858C66 /* Foundation.framework in Frameworks */,
@@ -257,6 +260,7 @@
 				1A080AC51914277500858C66 /* GPSDemo */,
 				1A080ABE1914277500858C66 /* Frameworks */,
 				1A080ABD1914277500858C66 /* Products */,
+				4E825B890375E9008B9FA15F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,7 +275,8 @@
 		1A080ABE1914277500858C66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1AAD945B1A323E06003C5156 /* GPShopper.framework */,
+				2E867D481A7FEC0D00FE1F2B /* libPods-GPShopperSDK.a */,
+				2E867D461A7FEC0900FE1F2B /* libPods-GPShopper-iOS-GPShopperSDK.a */,
 				1AD79DBA19EC893000E485AB /* EventKit.framework */,
 				1AD79DBB19EC893000E485AB /* EventKitUI.framework */,
 				1A95B6A219E721AA0078028E /* CoreBluetooth.framework */,
@@ -283,6 +288,8 @@
 				1A080AC11914277500858C66 /* CoreGraphics.framework */,
 				1A080AC31914277500858C66 /* UIKit.framework */,
 				1A080AD81914277500858C66 /* XCTest.framework */,
+				53EE838E865263D9E34E16A2 /* libPods-GPShopper-iOS.a */,
+				3C319C4AF7948D75DDADA4DA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -506,6 +513,15 @@
 			name = INSTORE;
 			sourceTree = "<group>";
 		};
+		4E825B890375E9008B9FA15F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECF378B3728B4E274F1F63E3 /* Pods-GPShopper-iOS.debug.xcconfig */,
+				2E01FBB1879011A220233F4A /* Pods-GPShopper-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C032A2A51A0027AF00088FFF /* REGISTRATION */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,9 +545,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A080AE81914277500858C66 /* Build configuration list for PBXNativeTarget "GPShopper-iOS" */;
 			buildPhases = (
+				0D62BF3A9CE2ECD0B7C8AE50 /* Check Pods Manifest.lock */,
 				1A080AB81914277500858C66 /* Sources */,
 				1A080AB91914277500858C66 /* Frameworks */,
 				1A080ABA1914277500858C66 /* Resources */,
+				0C3422411A5FA02157ECBA6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -638,6 +656,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3422411A5FA02157ECBA6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D62BF3A9CE2ECD0B7C8AE50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A080AB81914277500858C66 /* Sources */ = {
@@ -762,12 +813,13 @@
 		};
 		1A080AE91914277500858C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF378B3728B4E274F1F63E3 /* Pods-GPShopper-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Maya Muller (8FK54JFFP4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -775,21 +827,30 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/GPShopper-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Supporting Files/GPShopper-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "GPShopper-iOS";
-				PROVISIONING_PROFILE = "aaa364bd-b13a-4729-b5d4-05ea0be214ee";
+				PROVISIONING_PROFILE = "0208be47-8e7d-4a32-85a3-62f55be43e87";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		1A080AEA1914277500858C66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E01FBB1879011A220233F4A /* Pods-GPShopper-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: GPShopper, LLC (776ZDTBFVK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GPShopper, LLC (776ZDTBFVK)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -797,10 +858,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/GPShopper-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Supporting Files/GPShopper-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "GPShopper-iOS";
-				PROVISIONING_PROFILE = "aaa364bd-b13a-4729-b5d4-05ea0be214ee";
+				PROVISIONING_PROFILE = "5fb8adc1-e399-4da8-8a40-c47f60e96a89";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
