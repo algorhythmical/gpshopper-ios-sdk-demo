@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -51,12 +51,6 @@
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Del" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-vB-rdQ">
-                            <rect key="frame" x="32" y="455" width="256" height="20"/>
-                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6a-fV-eEd">
                             <rect key="frame" x="20" y="411" width="280" height="36"/>
                             <color key="backgroundColor" red="0.20655930353139595" green="0.58386907991830606" blue="0.87699258207070707" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,12 +67,28 @@
                                 <action selector="addToShoppingList:" destination="-1" eventType="touchUpInside" id="fea-MS-urt"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Del" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-vB-rdQ">
+                            <rect key="frame" x="32" y="455" width="256" height="20"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oz-Lh-Qu3" userLabel="ApplePayButton">
+                            <rect key="frame" x="63" y="485" width="194" height="59"/>
+                            <state key="normal" image="apple_pay_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="checkOut:" destination="-1" eventType="touchUpInside" id="N78-EY-e4S"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstItem="F2v-tP-Hge" firstAttribute="top" secondItem="bLu-TX-Qv5" secondAttribute="top" id="1Ha-hh-GCf"/>
                         <constraint firstItem="4aH-vB-rdQ" firstAttribute="leading" secondItem="bLu-TX-Qv5" secondAttribute="leading" constant="32" id="9aw-kG-MTX"/>
                         <constraint firstItem="F2v-tP-Hge" firstAttribute="leading" secondItem="bLu-TX-Qv5" secondAttribute="leading" id="9bC-fI-vBe"/>
-                        <constraint firstAttribute="bottom" secondItem="4aH-vB-rdQ" secondAttribute="bottom" constant="100" id="Ci8-DR-GxQ"/>
+                        <constraint firstAttribute="centerX" secondItem="5Oz-Lh-Qu3" secondAttribute="centerX" id="C1I-yd-BPW"/>
+                        <constraint firstAttribute="bottom" secondItem="5Oz-Lh-Qu3" secondAttribute="bottom" priority="500" constant="24" id="Cv3-x6-x5T"/>
                         <constraint firstAttribute="trailing" secondItem="bLc-Ny-WUT" secondAttribute="trailing" constant="32" id="G2O-eN-zdO"/>
                         <constraint firstItem="EPp-37-bAi" firstAttribute="leading" secondItem="bLu-TX-Qv5" secondAttribute="leading" constant="32" id="N2h-p4-kE0"/>
                         <constraint firstItem="4aH-vB-rdQ" firstAttribute="top" secondItem="L6a-fV-eEd" secondAttribute="bottom" constant="8" id="UlK-af-ZTX"/>
@@ -86,6 +96,7 @@
                         <constraint firstAttribute="trailing" secondItem="EPp-37-bAi" secondAttribute="trailing" constant="32" id="YAw-tF-AS3"/>
                         <constraint firstItem="EPp-37-bAi" firstAttribute="top" secondItem="F2v-tP-Hge" secondAttribute="bottom" constant="24" id="YQN-9b-lXB"/>
                         <constraint firstAttribute="trailing" secondItem="4aH-vB-rdQ" secondAttribute="trailing" constant="32" id="ZJf-NG-IWQ"/>
+                        <constraint firstItem="5Oz-Lh-Qu3" firstAttribute="top" secondItem="4aH-vB-rdQ" secondAttribute="bottom" constant="10" id="Zt0-PM-NLt"/>
                         <constraint firstItem="bLc-Ny-WUT" firstAttribute="top" secondItem="EPp-37-bAi" secondAttribute="bottom" constant="12" id="dWT-yy-Jli"/>
                         <constraint firstItem="bLc-Ny-WUT" firstAttribute="leading" secondItem="bLu-TX-Qv5" secondAttribute="leading" constant="32" id="jem-iI-Q7P"/>
                         <constraint firstAttribute="centerX" secondItem="L6a-fV-eEd" secondAttribute="centerX" id="k43-zo-7su"/>
@@ -103,6 +114,9 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="apple_pay_button" width="194" height="59"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

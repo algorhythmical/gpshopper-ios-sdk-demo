@@ -209,6 +209,7 @@
 		1AFFEEDA1924186600340EE5 /* GPDPDPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDPDPViewController.h; sourceTree = "<group>"; };
 		1AFFEEDB1924186600340EE5 /* GPDPDPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDPDPViewController.m; sourceTree = "<group>"; };
 		1AFFEEDC1924186600340EE5 /* GPDPDPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDPDPViewController.xib; sourceTree = "<group>"; };
+		2E9272511AC4656F00454B32 /* GPShopper-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GPShopper-iOS.entitlements"; sourceTree = "<group>"; };
 		2EC464C01A7948DE00B7A823 /* GPDRequestAssociateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDRequestAssociateViewController.h; sourceTree = "<group>"; };
 		2EC464C11A7948DE00B7A823 /* GPDRequestAssociateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDRequestAssociateViewController.m; sourceTree = "<group>"; };
 		2EC464C21A7948DE00B7A823 /* GPDRequestAssociateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDRequestAssociateViewController.xib; sourceTree = "<group>"; };
@@ -251,6 +252,7 @@
 		1A080AB31914277500858C66 = {
 			isa = PBXGroup;
 			children = (
+				2E9272511AC4656F00454B32 /* GPShopper-iOS.entitlements */,
 				1AD79DCB19EDC49400E485AB /* TWTSideMenuViewController */,
 				1A9D6274191EB61A0069D303 /* Supporting Files */,
 				1A9D622A191EB27A0069D303 /* Images */,
@@ -558,6 +560,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.OMC = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -766,8 +771,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Maya Muller (8FK54JFFP4)";
+				CODE_SIGN_ENTITLEMENTS = "GPShopper-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -778,7 +784,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "GPShopper-iOS";
-				PROVISIONING_PROFILE = "aaa364bd-b13a-4729-b5d4-05ea0be214ee";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -789,7 +795,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: GPShopper, LLC (776ZDTBFVK)";
+				CODE_SIGN_ENTITLEMENTS = "GPShopper-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -800,7 +808,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "GPShopper-iOS";
-				PROVISIONING_PROFILE = "aaa364bd-b13a-4729-b5d4-05ea0be214ee";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

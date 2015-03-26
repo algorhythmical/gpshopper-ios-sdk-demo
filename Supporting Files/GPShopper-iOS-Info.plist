@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.gpshopper.gpshopper</string>
+	<string>com.gpshopper.demo</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -32,7 +32,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>GPSSDKDeveloperKey</key>
 	<string>secret</string>
 	<key>GPSSDKDeveloperName</key>
@@ -44,7 +44,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Demo Geofence, Beacons, and Stores</string>
 	<key>SCClientTypeId</key>
-	<string>147</string>
+	<string>159</string>
 	<key>SCHostName</key>
 	<string>sdk.gpshopper.com</string>
 	<key>UIAppFonts</key>

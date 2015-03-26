@@ -7,8 +7,9 @@
 //
 
 #import "GPDViewController.h"
+#import <PassKit/PassKit.h>
 
-@interface GPDPDPViewController : GPDViewController <SCLocalizedProductFetcherListener>
+@interface GPDPDPViewController : GPDViewController <SCLocalizedProductFetcherListener,PKPaymentAuthorizationViewControllerDelegate>
 
 @property (strong, nonatomic) SCSearchResultProduct *product;
 @property (strong, nonatomic) SCLocalizedProduct *localInstance;
