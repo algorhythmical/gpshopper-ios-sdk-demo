@@ -40,6 +40,8 @@
             [self.spinner stopAnimating];
         });
     }
+    // This has the side effect of also displaying the count in the breadcrumb when drilling down.
+    self.title = [self.title stringByAppendingString:[NSString stringWithFormat:@" (%lu)", node.children.count]];
 }
 
 #pragma mark UITableViewDataSource
