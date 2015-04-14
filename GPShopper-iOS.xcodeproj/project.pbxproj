@@ -91,6 +91,8 @@
 		2EC464C41A7948DE00B7A823 /* GPDRequestAssociateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC464C21A7948DE00B7A823 /* GPDRequestAssociateViewController.xib */; };
 		2EC464C81A794A5200B7A823 /* GPDInStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC464C61A794A5200B7A823 /* GPDInStoreViewController.m */; };
 		2EC464C91A794A5200B7A823 /* GPDInStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC464C71A794A5200B7A823 /* GPDInStoreViewController.xib */; };
+		70FEFA3D1ADB1A110050C5AD /* GPDBeaconOptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */; };
+		70FEFA401ADB66BA0050C5AD /* GPDBeaconOptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */; };
 		C032A2B71A002C7600088FFF /* GPDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C032A2B51A002C7600088FFF /* GPDProfileViewController.m */; };
 		C032A2B81A002C7600088FFF /* GPDProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C032A2B61A002C7600088FFF /* GPDProfileViewController.xib */; };
 		C032A2BC1A00328500088FFF /* GPDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C032A2BA1A00328500088FFF /* GPDLoginViewController.m */; };
@@ -215,6 +217,9 @@
 		2EC464C51A794A5200B7A823 /* GPDInStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDInStoreViewController.h; sourceTree = "<group>"; };
 		2EC464C61A794A5200B7A823 /* GPDInStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDInStoreViewController.m; sourceTree = "<group>"; };
 		2EC464C71A794A5200B7A823 /* GPDInStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDInStoreViewController.xib; sourceTree = "<group>"; };
+		70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDBeaconOptViewController.xib; sourceTree = "<group>"; };
+		70FEFA3E1ADB66BA0050C5AD /* GPDBeaconOptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDBeaconOptViewController.h; sourceTree = "<group>"; };
+		70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDBeaconOptViewController.m; sourceTree = "<group>"; };
 		C032A2B41A002C7600088FFF /* GPDProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDProfileViewController.h; sourceTree = "<group>"; };
 		C032A2B51A002C7600088FFF /* GPDProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDProfileViewController.m; sourceTree = "<group>"; };
 		C032A2B61A002C7600088FFF /* GPDProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDProfileViewController.xib; sourceTree = "<group>"; };
@@ -363,6 +368,7 @@
 		1A95B6B719E840380078028E /* MORE */ = {
 			isa = PBXGroup;
 			children = (
+				70FEFA3B1ADB16C20050C5AD /* BeaconOptIn */,
 				1A95B6B219E840350078028E /* GPDMoreViewController.h */,
 				1A95B6B319E840350078028E /* GPDMoreViewController.m */,
 				1A95B6B419E840350078028E /* GPDMoreViewController.xib */,
@@ -506,6 +512,16 @@
 			name = INSTORE;
 			sourceTree = "<group>";
 		};
+		70FEFA3B1ADB16C20050C5AD /* BeaconOptIn */ = {
+			isa = PBXGroup;
+			children = (
+				70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */,
+				70FEFA3E1ADB66BA0050C5AD /* GPDBeaconOptViewController.h */,
+				70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */,
+			);
+			name = BeaconOptIn;
+			sourceTree = "<group>";
+		};
 		C032A2A51A0027AF00088FFF /* REGISTRATION */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +600,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FEFA3D1ADB1A110050C5AD /* GPDBeaconOptViewController.xib in Resources */,
 				1AAD94611A324949003C5156 /* GPDShoppingListViewController.xib in Resources */,
 				1A9D6295191EB61A0069D303 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				1A95B6BC19E846AE0078028E /* GPDProductCell.xib in Resources */,
@@ -660,6 +677,7 @@
 				1A20B2A019E8A05F00EF404C /* GPDStoreDetailViewController.m in Sources */,
 				1A95B69F19E71EFD0078028E /* GPDEventsViewController.m in Sources */,
 				C032A2C11A0041A200088FFF /* GPDRegistrationViewController.m in Sources */,
+				70FEFA401ADB66BA0050C5AD /* GPDBeaconOptViewController.m in Sources */,
 				1A080AF119142E4E00858C66 /* GPDHomeViewController.m in Sources */,
 				1AF41309191EC8AD0044CAA8 /* GPDViewController.m in Sources */,
 				1A9D628A191EB61A0069D303 /* main.m in Sources */,
