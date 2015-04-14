@@ -91,6 +91,7 @@
 		2EC464C41A7948DE00B7A823 /* GPDRequestAssociateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC464C21A7948DE00B7A823 /* GPDRequestAssociateViewController.xib */; };
 		2EC464C81A794A5200B7A823 /* GPDInStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC464C61A794A5200B7A823 /* GPDInStoreViewController.m */; };
 		2EC464C91A794A5200B7A823 /* GPDInStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC464C71A794A5200B7A823 /* GPDInStoreViewController.xib */; };
+		706D36C91ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 706D36C81ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.m */; };
 		70FEFA3D1ADB1A110050C5AD /* GPDBeaconOptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */; };
 		70FEFA401ADB66BA0050C5AD /* GPDBeaconOptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */; };
 		C032A2B71A002C7600088FFF /* GPDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C032A2B51A002C7600088FFF /* GPDProfileViewController.m */; };
@@ -217,6 +218,8 @@
 		2EC464C51A794A5200B7A823 /* GPDInStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDInStoreViewController.h; sourceTree = "<group>"; };
 		2EC464C61A794A5200B7A823 /* GPDInStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDInStoreViewController.m; sourceTree = "<group>"; };
 		2EC464C71A794A5200B7A823 /* GPDInStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDInStoreViewController.xib; sourceTree = "<group>"; };
+		706D36C71ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDBeaconOptTableViewCell.h; sourceTree = "<group>"; };
+		706D36C81ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDBeaconOptTableViewCell.m; sourceTree = "<group>"; };
 		70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPDBeaconOptViewController.xib; sourceTree = "<group>"; };
 		70FEFA3E1ADB66BA0050C5AD /* GPDBeaconOptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDBeaconOptViewController.h; sourceTree = "<group>"; };
 		70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPDBeaconOptViewController.m; sourceTree = "<group>"; };
@@ -518,6 +521,8 @@
 				70FEFA3C1ADB1A110050C5AD /* GPDBeaconOptViewController.xib */,
 				70FEFA3E1ADB66BA0050C5AD /* GPDBeaconOptViewController.h */,
 				70FEFA3F1ADB66BA0050C5AD /* GPDBeaconOptViewController.m */,
+				706D36C71ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.h */,
+				706D36C81ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.m */,
 			);
 			name = BeaconOptIn;
 			sourceTree = "<group>";
@@ -675,6 +680,7 @@
 				C032A2B71A002C7600088FFF /* GPDProfileViewController.m in Sources */,
 				1A79E9B3191ED4B500075478 /* GPDSideMenuCell.m in Sources */,
 				1A20B2A019E8A05F00EF404C /* GPDStoreDetailViewController.m in Sources */,
+				706D36C91ADCCFD8006A9B12 /* GPDBeaconOptTableViewCell.m in Sources */,
 				1A95B69F19E71EFD0078028E /* GPDEventsViewController.m in Sources */,
 				C032A2C11A0041A200088FFF /* GPDRegistrationViewController.m in Sources */,
 				70FEFA401ADB66BA0050C5AD /* GPDBeaconOptViewController.m in Sources */,
