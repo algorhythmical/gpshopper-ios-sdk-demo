@@ -25,6 +25,7 @@
 #import "GPDInStoreViewController.h"
 #import "GPDShoppingListViewController.h"
 #import "GPDProfileViewController.h"
+#import "GPDBeaconOptViewController.h"
 
 @interface GPDAppDelegate ()
 
@@ -344,8 +345,11 @@
         NSURL *url = [NSURL URLWithString:@"http://www.gpshopper.com"];
         webVC.url = url;
         webVC.title = @"About Us";
-        
-        _moreViewController.viewControllers = @[webVC];
+
+        GPDBeaconOptViewController *beaconOptVC = [[GPDBeaconOptViewController alloc] init];
+        beaconOptVC.title = @"Beacon Opt In";
+
+        _moreViewController.viewControllers = @[webVC, beaconOptVC];
     }
     return _moreViewController;
 }
