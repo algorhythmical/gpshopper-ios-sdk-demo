@@ -17,7 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.optInSwitch addTarget:self action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
     [self.optInSwitch setOn:[SCBeaconDeviceManager isOptedIn]];
+}
+
+- (void)stateChanged:(UISwitch*)switchState {
+    if ([switchState isOn]) {
+        [SCBeaconDeviceManager optIn:YES];
+    }
+    else {
+        [SCBeaconDeviceManager optIn:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
