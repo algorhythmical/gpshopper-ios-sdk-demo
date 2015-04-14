@@ -16,21 +16,22 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-4e-01B">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <subviews>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-0t-hY5">
-                            <rect key="frame" x="136" y="119" width="51" height="31"/>
-                        </switch>
-                    </subviews>
-                </scrollView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-0t-hY5">
+                    <rect key="frame" x="235" y="90" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beacons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-D7-eSN">
+                    <rect key="frame" x="29" y="94" width="67.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kHd-4e-01B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2q8-hT-rPg"/>
-                <constraint firstAttribute="trailing" secondItem="kHd-4e-01B" secondAttribute="trailing" id="e4v-L9-GIo"/>
-                <constraint firstItem="kHd-4e-01B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="svy-8m-kDf"/>
-                <constraint firstAttribute="bottom" secondItem="kHd-4e-01B" secondAttribute="bottom" id="vkb-Ws-PbG"/>
+                <constraint firstItem="2RU-D7-eSN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="HK4-pY-9ln"/>
+                <constraint firstItem="2RU-D7-eSN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="94" id="KdO-l2-wrf"/>
+                <constraint firstItem="nb6-0t-hY5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="LIi-Ue-42c"/>
+                <constraint firstAttribute="trailing" secondItem="nb6-0t-hY5" secondAttribute="trailing" constant="36" id="rRS-N6-H3t"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
