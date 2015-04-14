@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString* const GPDBeaconDidOptInNotification;
+extern NSString* const GPDBeaconDidOptOutNotification;
+
 @interface GPDBeaconOptViewController : UIViewController
 
 @property(weak, nonatomic) IBOutlet UISwitch* optInSwitch;

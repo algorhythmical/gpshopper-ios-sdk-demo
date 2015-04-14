@@ -8,6 +8,9 @@
 
 #import "GPDBeaconOptViewController.h"
 
+NSString* const GPDBeaconDidOptInNotification = @"GPDBeaconDidOptInNotification";
+NSString* const GPDBeaconDidOptOutNotification = @"GPDBeaconDidOptOutNotification";
+
 @interface GPDBeaconOptViewController ()
 
 @end
@@ -24,9 +27,11 @@
 - (void)stateChanged:(UISwitch*)switchState {
     if ([switchState isOn]) {
         [SCBeaconDeviceManager optIn:YES];
+        [[NSNotificationCenter defaultCenter] postNotificationName:GPDBeaconDidOptInNotification object:self];
     }
     else {
         [SCBeaconDeviceManager optIn:NO];
+        [[NSNotificationCenter defaultCenter] postNotificationName:GPDBeaconDidOptOutNotification object:self];
     }
 }
 
