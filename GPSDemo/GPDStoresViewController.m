@@ -11,6 +11,7 @@
 
 
 
+NSString* const GPDCurrentLocationDidUpdateNotification = @"GPDCurrentLocationDidUpdateNotification";
 
 @interface GPDStoresViewController ()
 
