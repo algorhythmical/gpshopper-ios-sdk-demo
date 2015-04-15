@@ -7,6 +7,8 @@
 //
 
 #import "GPDMoreViewController.h"
+#import "GPDBeaconOptViewController.h"
+#import "GPDBeaconOptTableViewCell.h"
 
 @interface GPDMoreViewController ()
 
@@ -29,10 +31,28 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *reuseID = @"more_cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    static NSString *beaconReuseID = @"beacon_cell";
+    UITableViewCell *cell = nil;
+
+    if ([[self.viewControllers objectAtIndex:indexPath.row] isKindOfClass:[GPDBeaconOptViewController class]]) {
+        cell = [tableView dequeueReusableCellWithIdentifier:beaconReuseID];
+        if (!cell) {
+            cell = [[GPDBeaconOptTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:beaconReuseID];
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
+        if ([SCBeaconDeviceManager isOptedIn]) {
+            cell.detailTextLabel.text = @"On";
+        }
+        else {
+            cell.detailTextLabel.text = @"Off";
+        }
+    }
+    else {
+        cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
     }
     
     UIViewController *vc = self.viewControllers[indexPath.row];
