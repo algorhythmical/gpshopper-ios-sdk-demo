@@ -12,6 +12,7 @@
 
 
 NSString* const GPDCurrentLocationDidUpdateNotification = @"GPDCurrentLocationDidUpdateNotification";
+double const kMetersToMilesConversionFactor = 0.000621371;
 
 @interface GPDStoresViewController ()
 
@@ -46,6 +47,10 @@ NSString* const GPDCurrentLocationDidUpdateNotification = @"GPDCurrentLocationDi
      selector:@selector(reactToStoreLocationFetchedNotification:)
      name:kGPSSDKStoreLocationFetchedNotification
      object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(locationUpdated:)
+                                                 name:GPDCurrentLocationDidUpdateNotification
+                                               object:nil];
     [self searchCurrentLocation];
 }
 
@@ -165,6 +170,14 @@ NSString* const GPDCurrentLocationDidUpdateNotification = @"GPDCurrentLocationDi
                           cancelButtonTitle:@"Okay"
                           otherButtonTitles:nil] show];
     }
+}
+
+- (void)locationUpdated:(NSNotification*)notification
+{
+    NSDictionary *userInfoDict = [notification userInfo];
+    CLLocationDegrees latitude = [[userInfoDict objectForKey:@"latitude"] doubleValue];
+    CLLocationDegrees longitude = [[userInfoDict objectForKey:@"longitude"] doubleValue];
+    self.lastSearchedLocation = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
 }
 
 - (void)reloadAnnotations

@@ -26,4 +26,6 @@ extern NSString* const GPDCurrentLocationDidUpdateNotification;
 
 @property (assign, nonatomic) GPDStoresMode viewMode;
 
+@property (strong, nonatomic) CLLocation *lastSearchedLocation;
+
 @end
