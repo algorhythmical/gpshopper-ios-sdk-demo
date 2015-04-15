@@ -212,6 +212,12 @@
 -(void)locationUpdated:(SCGeoLocation *)location
 {
     NSLog(@"Location was updated to %lf, %lf", location.latlon.latitude, location.latlon.longitude);
+    NSDictionary *userInfoDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  [NSNumber numberWithDouble:location.latlon.latitude], @"latitude",
+                                  [NSNumber numberWithDouble:location.latlon.longitude], @"longitude",nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:GPDCurrentLocationDidUpdateNotification
+                                                        object:self
+                                                      userInfo:userInfoDict];
 }
 
 #pragma mark - Delegate methods: SCBeaconDeviceManagerDelegate  // All of the methods in the protocol are optional.
