@@ -213,6 +213,17 @@ double const kMetersToMilesConversionFactor = 0.000621371;
     id<StoreData> store = self.stores[indexPath.row];
     cell.textLabel.text = store.storeName;
     cell.detailTextLabel.text = store.streetAddress;
+
+    CLLocation *storeLocation = [[CLLocation alloc] initWithLatitude:store.lat longitude:store.lng];
+
+    CLLocationDistance distanceFromCurrentToStore = [self.lastSearchedLocation distanceFromLocation:storeLocation] * kMetersToMilesConversionFactor;
+
+    // Put distance to store in accessoryView
+    UILabel *distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 44.0, 22.0)];
+    distanceLabel.text = [NSString stringWithFormat:@"%f mi", distanceFromCurrentToStore];
+    [distanceLabel sizeToFit];
+    cell.accessoryView = distanceLabel;
+
     return cell;
 }
 
