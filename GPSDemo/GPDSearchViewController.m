@@ -87,8 +87,13 @@
     
     SCSearchResultProduct *product = [self.products objectAtIndex:indexPath.row];
     
-    cell.titleLabel.text = product.productName;
-    
+    InstanceSpecificInfo *firstInstance = [product.productInstances firstObject];
+    NSNumber *price = [NSNumber numberWithUnsignedLongLong:firstInstance.price/100.f];
+    NSString *priceString = [NSString stringWithFormat:@"%@",
+                             [NSNumberFormatter localizedStringFromNumber:price numberStyle:NSNumberFormatterCurrencyStyle]];
+    NSArray *labelStrings = [NSArray arrayWithObjects:product.productName,priceString ? priceString : @"",nil];
+   cell.titleLabel.text = [labelStrings componentsJoinedByString:@"\n"];
+
     NSString *url = [product urlForImageWithinSize:CGSizeMake(480, 640)];
     UIImage *cachedImage = [[GPDImageFetcher sharedInstance] cachedImageForURL:url];
     
