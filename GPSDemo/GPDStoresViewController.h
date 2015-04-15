@@ -14,6 +14,8 @@ typedef enum : NSUInteger {
     GPDStoresListMode,
 } GPDStoresMode;
 
+extern NSString* const GPDCurrentLocationDidUpdateNotification;
+
 @interface GPDStoresViewController : GPDViewController <MKMapViewDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
@@ -23,5 +25,7 @@ typedef enum : NSUInteger {
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 
 @property (assign, nonatomic) GPDStoresMode viewMode;
+
+@property (strong, nonatomic) CLLocation *lastSearchedLocation;
 
 @end

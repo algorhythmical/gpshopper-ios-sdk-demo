@@ -11,6 +11,8 @@
 
 
 
+NSString* const GPDCurrentLocationDidUpdateNotification = @"GPDCurrentLocationDidUpdateNotification";
+double const kMetersToMilesConversionFactor = 0.000621371;
 
 @interface GPDStoresViewController ()
 
@@ -45,6 +47,10 @@
      selector:@selector(reactToStoreLocationFetchedNotification:)
      name:kGPSSDKStoreLocationFetchedNotification
      object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(locationUpdated:)
+                                                 name:GPDCurrentLocationDidUpdateNotification
+                                               object:nil];
     [self searchCurrentLocation];
 }
 
@@ -166,6 +172,14 @@
     }
 }
 
+- (void)locationUpdated:(NSNotification*)notification
+{
+    NSDictionary *userInfoDict = [notification userInfo];
+    CLLocationDegrees latitude = [[userInfoDict objectForKey:@"latitude"] doubleValue];
+    CLLocationDegrees longitude = [[userInfoDict objectForKey:@"longitude"] doubleValue];
+    self.lastSearchedLocation = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+}
+
 - (void)reloadAnnotations
 {
     [self.mapView removeAnnotations:self.mapView.annotations];
@@ -199,6 +213,17 @@
     id<StoreData> store = self.stores[indexPath.row];
     cell.textLabel.text = store.storeName;
     cell.detailTextLabel.text = store.streetAddress;
+
+    CLLocation *storeLocation = [[CLLocation alloc] initWithLatitude:store.lat longitude:store.lng];
+
+    CLLocationDistance distanceFromCurrentToStore = [self.lastSearchedLocation distanceFromLocation:storeLocation] * kMetersToMilesConversionFactor;
+
+    // Put distance to store in accessoryView
+    UILabel *distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 44.0, 22.0)];
+    distanceLabel.text = [NSString stringWithFormat:@"%f mi", distanceFromCurrentToStore];
+    [distanceLabel sizeToFit];
+    cell.accessoryView = distanceLabel;
+
     return cell;
 }
 
